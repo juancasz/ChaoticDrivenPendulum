@@ -1,0 +1,17 @@
+ cd C:\Octavedata
+data=load("fasepen.txt")
+poincare=load("poincarepen.txt")
+octave:26> plot(data(:,1),data(:,2),'-b')
+octave:27> xlabel('t','FontSize',20)
+octave:28> ylabel('\theta','FontSize',20)
+octave:31>   title('b=1.5 , q=0.5 , \omegao=0.2','FontSize',20)
+octave:32>  plot(data(:,1),data(:,3),'-b')
+octave:33> xlabel('t','FontSize',20)
+octave:34>  ylabel('\omega','FontSize',20)
+octave:35>    title('b=1.5 , q=0.5 , \omegao=0.2','FontSize',20) 
+octave:36> plot(data(:,2),data(:,3),'-b')
+octave:37> hold on
+octave:38> plot(poincare(:,1),poincare(:,4),'.g')
+octave:39> xlabel('\theta','FontSize',20)
+octave:40> ylabel('\omega','FontSize',20)
+octave:41>      title('b=1.5 , q=0.5 , \omegao=0.2','FontSize',20)
